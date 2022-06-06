@@ -66,6 +66,7 @@ export default {
   axios: {
     progress: false,
     retry: { retries: 3 },
+    proxy: true,
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

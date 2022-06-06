@@ -1,32 +1,32 @@
 export default {
-  id: 'cosmos-hub-testnet', // DEPRECATE, only used for Lunie extension, NOT CHAIN ID
-  name: 'Cosmos Stargate',
+  id: 'defund-private-1', // DEPRECATE, only used for Lunie extension, NOT CHAIN ID
+  name: 'Defund',
   description:
-    'Cosmos is a network of independent parallel blockchains, powered by BFT consensus algorithms like Tendermint.',
+    'Defund allows for the creation and investment in decentralized, exchange traded funds.',
   logo: `logo.svg`,
-  website: 'https://cosmos.network',
-  apiURL: 'http://localhost:8010/proxy', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
-  rpcURL: 'ws://34.123.30.100:26657',
-  stakingDenom: 'MUON',
+  website: 'https://defund.app',
+  apiURL: 'http://api-1.defund.nodes.guru', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
+  rpcURL: 'https://rpc-1.defund.nodes.guru',
+  stakingDenom: 'FETF',
   coinLookup: [
     {
-      viewDenom: 'MUON',
-      chainDenom: 'umuon',
+      viewDenom: 'FETF',
+      chainDenom: 'ufetf',
       chainToViewConversionFactor: 1e-6,
       icon: `currencies/muon.png`,
     },
   ],
-  addressPrefix: 'cosmos',
-  validatorAddressPrefix: 'cosmosvaloper',
-  validatorConsensusaddressPrefix: 'cosmosvalcons', // needed to map validators from staking queries to the validator set
+  addressPrefix: 'defund',
+  validatorAddressPrefix: 'defundvaloper',
+  validatorConsensusaddressPrefix: 'defundvalcons', // needed to map validators from staking queries to the validator set
   HDPath: `m/44'/118'/0'/0/0`,
-  lockUpPeriod: `3 days`,
+  lockUpPeriod: `14 days`,
   fees: {
     default: {
-      gasEstimate: 350000,
+      gasEstimate: 200000,
       feeOptions: [
         {
-          denom: 'MUON',
+          denom: 'FETF',
           amount: 0.001,
         },
       ],

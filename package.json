@@ -16,11 +16,6 @@
     "*.{js,vue}": "eslint",
     "*.{css,vue}": "stylelint"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "@cosmjs/launchpad": "^0.23.1",
     "@cosmjs/launchpad-ledger": "^0.23.1",
